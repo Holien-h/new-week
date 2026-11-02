@@ -1,10 +1,10 @@
-name = input("What's your name? ")
-print(f"Hi {name}!")
-print(f"Your name has {len(name)} letters.")
-
-a = float(input("First number: "))
-b = float(input("Second number: "))
-print(f"{a} + {b} = {a + b}")
-print(f"{a} - {b} = {a - b}")
-print(f"{a} x {b} = {a * b}")
-print(f"{a} / {b} = {round(a / b, 2)}")
+score = int(input("Your test score (0-100)? "))
+if score >= 90:
+ grade = "A"
+elif score >= 75:
+ grade = "B"
+elif score >= 50:
+ grade = "C"
+else:
+ grade = "F"
+print(f"Your grade: {grade}")
